@@ -1,0 +1,28 @@
+{
+  "name": "ambev",
+  "version": "1.0.0",
+  "description": "Test frontend",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "node app/bin/www.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "./node_modules/.bin/mocha './!(node_modules)/**/*.spec.js' --timeout 15000"
+  },
+  "author": "Felipe Alves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "graphql-request": "^1.8.2",
+    "https": "^1.0.0",
+    "node-geocoder": "^3.24.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chai-subset": "^1.6.0",
+    "concurrently": "^5.0.0",
+    "mocha": "^6.2.2"
+  }
+}

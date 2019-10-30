@@ -1,0 +1,21 @@
+@import './../_commons/styles/base.scss';
+
+.mini-cart {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #FCD500;
+  height: 50px;
+  text-align: right;
+  .container-total {
+    padding-top: 14px;
+    span {
+      font-size: 20px;
+    }
+    .total {
+      font-size: 23px;
+      font-weight: bold;
+      padding-left: 15px;
+    }
+  }
+}
